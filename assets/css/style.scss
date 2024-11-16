@@ -1,0 +1,83 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom Variables */
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #f5f5f5;
+$font-color: #333;
+$header-font: 'Roboto', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+/* Apply Customizations */
+body {
+  background-color: $background-color;
+  color: $font-color;
+  font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  color: $primary-color;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+    color: darken($primary-color, 10%);
+  }
+}
+
+.navbar {
+  background-color: $primary-color;
+  border-bottom: 2px solid $secondary-color;
+  
+  a {
+    color: white;
+    padding: 0.5em;
+    display: inline-block;
+    
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  
+  a {
+    color: white;
+    text-decoration: underline;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/* Code Block Styling */
+code, pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  font-family: 'Courier New', monospace;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .navbar a {
+    display: block;
+    text-align: center;
+  }
+}
