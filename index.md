@@ -1,4 +1,5 @@
 ---
 title: UwU
+layout: home
 ---
 
