@@ -1,8 +1,5 @@
 ---
 title: UwU
----
-
----
 layout: home
 ---
 
